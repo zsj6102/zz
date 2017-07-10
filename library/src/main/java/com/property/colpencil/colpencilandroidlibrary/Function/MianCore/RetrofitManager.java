@@ -47,9 +47,9 @@ public class RetrofitManager {
     //okhttp请求实例
     private static volatile OkHttpClient sOkHttpClient;
 
-//    // 管理不同HostType的单例  默认只有三种类型的主机地址值
-//    private static SparseArray<RetrofitManager> sInstanceManager = new SparseArray<>(
-//            3);
+    //    // 管理不同HostType的单例  默认只有三种类型的主机地址值
+    //    private static SparseArray<RetrofitManager> sInstanceManager = new SparseArray<>(
+    //            3);
 
     private static Retrofit retrofit;
 
@@ -125,15 +125,15 @@ public class RetrofitManager {
      * @return 实例
      */
     public static RetrofitManager getInstance(int hostType, Context context,String baseUrl) {
-//        = sInstanceManager.get(hostType);
-//        if (instance == null) {
+        //        = sInstanceManager.get(hostType);
+        //        if (instance == null) {
         instance = new RetrofitManager(hostType,context,baseUrl);
 
-//            sInstanceManager.put(hostType, instance);
-            return instance;
-//        } else {
-//            return instance;
-//        }
+        //            sInstanceManager.put(hostType, instance);
+        return instance;
+        //        } else {
+        //            return instance;
+        //        }
     }
 
     private RetrofitManager(int hostType, Context context, String baseUrl) {
@@ -145,7 +145,7 @@ public class RetrofitManager {
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .build();
 
-//        mNewsService = retrofit.create(NewsService.class);
+        //        mNewsService = retrofit.create(NewsService.class);
     }
 
     // 配置OkHttpClient
@@ -162,12 +162,12 @@ public class RetrofitManager {
                             1024 * 1024 * 100);
                     sOkHttpClient = new OkHttpClient
                             .Builder()
-//                            .cache(cache)
+                            //                            .cache(cache)
                             .addNetworkInterceptor(mRewriteCacheControlInterceptor)
                             .addInterceptor(mRewriteCacheControlInterceptor)
                             .addInterceptor(mLoggingInterceptor)
                             .retryOnConnectionFailure(true)
-//                            .connectTimeout(30, TimeUnit.SECONDS)
+                            //                            .connectTimeout(30, TimeUnit.SECONDS)
                             .addInterceptor(logging)
                             .cookieJar(persistentCookieJar)
                             .build();

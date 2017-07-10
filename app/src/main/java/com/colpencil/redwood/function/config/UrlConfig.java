@@ -10,8 +10,8 @@ public class UrlConfig {
 
 //    public static final String PHILHARMONIC_HOST = "http://192.168.0.116:8080/";    //文飘
 
-    public static final String PHILHARMONIC_HOST = "http://192.168.0.143:8080/wwhm/";      //凤文
-
+    public static final String PHILHARMONIC_HOST = "http://192.168.0.118:8080/";      //凤文
+//    public static final String PHILHARMONIC_HOST = "http://192.168.0.143:8080/wwhm/";
 //    public static final String PHILHARMONIC_HOST = "http://192.168.0.34:80/wwhm/";
 
 //    public static final String PHILHARMONIC_HOST="http://192.168.0.152:8080/wwhm/";

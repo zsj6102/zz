@@ -70,7 +70,7 @@ public class GoodMiddleFragment extends ColpencilFragment implements IAnnounceVi
     @Override
     public void loadSuccess(AnnounceResult result) {
         if ("1".equals(result.getCode())) {
-            tool.X5Load(webView, result.getUrl(), bar);
+//            tool.X5Load(webView, result.getUrl(), bar);
         }
     }
 

@@ -92,7 +92,7 @@ import rx.Observable;
  * 日期：2016/7/6 11 04
  */
 public interface RedWoodApi {
-
+//3333
     @GET("mobileArticle!getArticleList.do")
     Observable<CyclopediaResult> getCycloTagItem(@QueryMap HashMap<String, String> params);
 
